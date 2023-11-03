@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PruebaBotonesActivity">
+
+    <Switch
+        android:id="@+id/emailSwitch"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:checked="true"
+        android:text="Tiene email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Apagado"
+        android:textOn="Encendido"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/emailSwitch"
+        app:layout_constraintStart_toStartOf="@+id/emailSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/emailSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
