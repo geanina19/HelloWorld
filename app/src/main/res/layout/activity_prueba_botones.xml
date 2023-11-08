@@ -22,13 +22,13 @@
         android:id="@+id/toggleButton2"
         android:layout_width="180dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="150dp"
         android:checked="true"
         android:text="ToggleButton"
         android:textOff="Apagado"
         android:textOn="Encendido"
-        app:layout_constraintStart_toStartOf="@+id/hombre"
-        app:layout_constraintTop_toBottomOf="@+id/hombre"
+        app:layout_constraintStart_toStartOf="@+id/textoSexo"
+        app:layout_constraintTop_toBottomOf="@+id/textoSexo"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -38,30 +38,33 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:enabled="true"
+        android:hint="Nombre"
         android:inputType="text"
         android:minHeight="48dp"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="@+id/emailSwitch"
         app:layout_constraintStart_toStartOf="@+id/emailSwitch"
         app:layout_constraintTop_toBottomOf="@+id/emailSwitch" />
 
-    <RadioButton
-        android:id="@+id/hombre"
-        android:layout_width="100dp"
+    <RadioGroup
+        android:id="@+id/sexoGroup"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hombre"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/textoSexo"
-        app:layout_constraintTop_toBottomOf="@+id/textoSexo" />
+        app:layout_constraintTop_toBottomOf="@+id/textoSexo">
 
-    <RadioButton
-        android:id="@+id/mujer"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Mujer"
-        app:layout_constraintEnd_toEndOf="@+id/textoSexo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/hombre"
-        app:layout_constraintTop_toBottomOf="@+id/textoSexo" />
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textoSexo"
@@ -73,11 +76,14 @@
         app:layout_constraintStart_toStartOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
-    <RadioGroup
-        android:id="@+id/sexo"
+    <Button
+        android:id="@+id/helloButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/hombre"
-        app:layout_constraintTop_toBottomOf="@+id/hombre" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:text="Hello"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textoSexo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
