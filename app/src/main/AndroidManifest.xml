@@ -13,13 +13,22 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
-            android:name=".PruebaBotonesActivity"
+            android:name=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TextViewActivity"
             android:exported="true" />
         <activity
-            android:name=".CalculadoraTableActivity"
+            android:name=".DisplayUserNameActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UserNameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +36,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PruebaBotonesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalculadoraTableActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
