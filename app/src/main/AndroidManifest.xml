@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
+            android:name=".DisplayStudentActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentActivity"
             android:exported="false" />
         <activity

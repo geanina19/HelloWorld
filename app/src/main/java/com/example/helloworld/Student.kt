@@ -6,6 +6,6 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Student(
     val name: String,
-    val urname: String,
+    val surname: String,
     val age: Int
 ): Parcelable
