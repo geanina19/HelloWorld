@@ -18,5 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:text="Nombre y apellidos" />
+        android:fontFamily="casual"
+        android:text="Nombre y apellidos"
+        android:textAllCaps="false"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="24sp" />
 </LinearLayout>

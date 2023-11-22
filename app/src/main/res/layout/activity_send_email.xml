@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SendEmailActivity">
 
     <EditText
@@ -16,44 +17,46 @@
         android:ems="10"
         android:hint="To"
         android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/asuntoEditText"
-        android:layout_width="0dp"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
+        android:gravity="center_vertical"
         android:hint="Subject"
         android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/mensaje"
-        android:layout_width="0dp"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Message"
         android:inputType="textMultiLine"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/asuntoEditText"
-        app:layout_constraintStart_toStartOf="@+id/asuntoEditText"
-        app:layout_constraintTop_toBottomOf="@+id/asuntoEditText" />
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar texto" />
 
     <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button"
+        android:id="@+id/enviarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send"
-        app:layout_constraintEnd_toEndOf="@+id/mensaje"
-        app:layout_constraintTop_toBottomOf="@+id/mensaje" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="end"
+        android:text="Send" />
+</LinearLayout>
